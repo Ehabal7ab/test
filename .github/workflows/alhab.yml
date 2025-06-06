@@ -1,0 +1,10 @@
+name: Hello Action
+
+on: push  # يعني راح يشتغل كل مرة تسوي push
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # يشتغل على Linux
+    steps:
+      - name: Print Hello
+        run: echo "Hello from GitHub Actions!"
